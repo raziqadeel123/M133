@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import {
-  Form,
-  FormGroup,
-  Stack,
-  TextInput,
-  Button,
-  ButtonSet,
-} from '@carbon/react';
+import { Form, FormGroup, Stack, TextInput, Button } from '@carbon/react';
 import Navbar from '../Navbar/Navbar';
 //import { useHistory } from 'react-router-dom';
 
@@ -35,7 +28,7 @@ const Login = () => {
 
   return (
     <>
-    <Navbar></Navbar>
+      <Navbar></Navbar>
       {/**  
       <section className='hero has-background-grey-light is-fullheight is-fullwidth'>
         <div className='hero-body'>
@@ -85,7 +78,6 @@ const Login = () => {
      */}
 
       <Form className='login--form' onSubmit={Auth}>
-   
         <FormGroup className='login--formGroup'>
           <legend className='message'>{msg}</legend>
           <Stack gap={7}>

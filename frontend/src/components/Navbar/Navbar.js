@@ -7,7 +7,7 @@ import {
   HeaderGlobalAction,
   HeaderGlobalBar,
   Theme,
-  Link
+  Link,
 } from '@carbon/react';
 import { Search, Notification, Logout, Clean } from '@carbon/icons-react';
 

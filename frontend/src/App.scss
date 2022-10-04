@@ -1,27 +1,26 @@
-.cds--grid{
-  margin: 30px 140px 20px 140px;
+.cds--grid {
+  margin: 80px 0px 60px 350px;
 }
 
 // styling the button set in Homepage
-.cds--btn-set{
+.cds--btn-set {
   margin-top: 110px;
 }
-.cds--btn--primary{
+.cds--btn--primary {
   margin-right: 50px;
 }
 // H1 in Homepage
-.slogan--h1{
+.slogan--h1 {
   font-size: 75px;
   margin-top: 90px;
 }
-.img--banner{
+.img--banner {
   width: 85%;
 }
 
-.btn--mar-right{
+.btn--mar-right {
   margin-right: 40px;
   text-decoration: none;
-
 }
 // styling the login page
 
@@ -58,31 +57,45 @@
 }
 
 // Footer styling
-footer{
-  margin-top: 120px;
+footer {
+  margin-top: 320px;
 }
-footer ul{
- display: flex;
+footer ul {
+  display: flex;
   flex-direction: row;
   justify-content: center;
- 
-
 }
- footer ul li{
+footer ul li {
   margin: 0px 10px 0px 30px;
   padding-bottom: 30px;
- 
- }
-  footer ul li a{
+}
+footer ul li a {
   text-decoration: none;
   color: #0f62fe;
- }
- footer ul li a:hover{
+}
+footer ul li a:hover {
   color: black;
   border-bottom: 1px solid black;
- }
+}
 
- //Log out 
- .logout-btn {
-    background-color: transparent;
- }
+//Log out
+.logout-btn {
+  background-color: transparent;
+  border: none;
+}
+
+// register page
+.container {
+  margin-top: 250px;
+}
+
+// 404 page
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section img {
+  height: 600px;
+  width: 400px;
+}

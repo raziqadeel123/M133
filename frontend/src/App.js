@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar.js';
 import Register from './components/Register/Register.js';
 import Homepage from './components/Homepage/Homepage.jsx';
 import Termandconditions from './components/Termandconditions.jsx';
+import { Pagenotfound } from './components/Pagenotfound.jsx';
 import './App.scss';
 
 function App() {
@@ -13,13 +14,14 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<Homepage></Homepage>} />
-        <Route path='/register' element={<Register></Register>} />
-        <Route path='/login' element={<Login></Login>} />
-        <Route path='/dashboard' element={<Dashboard></Dashboard>} />
         <Route
           path='/termsandconditions'
           element={<Termandconditions></Termandconditions>}
         />
+        <Route path='/register' element={<Register></Register>} />
+        <Route path='/login' element={<Login></Login>} />
+        <Route path='/dashboard' element={<Dashboard></Dashboard>} />
+        <Route path='/*' element={<Pagenotfound></Pagenotfound>} />
       </Routes>
     </BrowserRouter>
   );
