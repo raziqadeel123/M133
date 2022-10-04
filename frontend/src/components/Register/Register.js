@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './regStyle.scss';
 import authentication from './Assets/sign-up-form.svg';
+import Navbar from '../Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
 import {
   Form,
@@ -36,8 +37,8 @@ const Register = () => {
       navigate('/');
     } catch (error) {
       if (error.response) {
-        console.log(error.response)
-     //   console.log(error.response.data.msg)
+        console.log(error.response);
+        //   console.log(error.response.data.msg)
         setMsg(error.response.data.msg);
       }
     }
@@ -113,6 +114,7 @@ const Register = () => {
         </div>
       </section>
   */}
+      <Navbar></Navbar>
       <div className='container'>
         <div className='cds--grid cds--grid--condensed cds--grid--reg--page'>
           <div className='cds--row cds--row-bg '>
@@ -120,7 +122,6 @@ const Register = () => {
               <Form onSubmit={Register}>
                 <Stack gap={5}>
                   <TextInput
-                    
                     placeholder='Name'
                     labelText='Name'
                     value={name}
@@ -129,7 +130,6 @@ const Register = () => {
                   />
 
                   <TextInput
-                  
                     placeholder='yourname@example.com'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -142,7 +142,6 @@ const Register = () => {
                     placeholder='******'
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                 
                     required
                     // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
                   />
@@ -152,7 +151,6 @@ const Register = () => {
                     placeholder='******'
                     value={confPassword}
                     onChange={(e) => setConfPassword(e.target.value)}
-          
                     required
                     // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
                   />
