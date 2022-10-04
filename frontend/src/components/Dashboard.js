@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 
 const Dashboard = () => {
   const [name, setName] = useState('');

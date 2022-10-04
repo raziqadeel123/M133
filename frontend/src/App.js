@@ -2,7 +2,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Dashboard from './components/Dashboard.js';
 import Login from './components/Login/Login.js';
-import Navbar from './components/Navbar.js';
+import Navbar from './components/Navbar/Navbar.js';
 import Register from './components/Register/Register.js';
 import Homepage from './components/Homepage/Homepage.jsx';
 import Termandconditions from './components/Termandconditions.jsx';

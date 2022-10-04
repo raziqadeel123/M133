@@ -9,6 +9,7 @@ import {
   Button,
   ButtonSet,
 } from '@carbon/react';
+import Navbar from '../Navbar/Navbar';
 //import { useHistory } from 'react-router-dom';
 
 const Login = () => {
@@ -34,6 +35,7 @@ const Login = () => {
 
   return (
     <>
+    <Navbar></Navbar>
       {/**  
       <section className='hero has-background-grey-light is-fullheight is-fullwidth'>
         <div className='hero-body'>
