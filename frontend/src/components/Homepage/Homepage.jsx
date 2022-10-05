@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, ButtonSet } from '@carbon/react';
-import BannerImage from './Assets/man-sweeping-each-and-every-infected-places.svg';
+import BannerImage from './Assets/Banner.svg';
 import { Link } from 'react-router-dom';
-import { Footer } from '../Footer/Footer';
+import { Footer } from '../Footer/Footer.jsx';
 
 const Homepage = () => {
   return (

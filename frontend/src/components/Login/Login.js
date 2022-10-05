@@ -82,7 +82,7 @@ const Login = () => {
           <legend className='message'>{msg}</legend>
           <Stack gap={7}>
             <TextInput
-              labelText='Email or Username'
+              labelText='Enter an Email'
               type='email'
               placeholder='Email'
               value={email}

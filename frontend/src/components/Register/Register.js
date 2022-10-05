@@ -118,6 +118,7 @@ const Register = () => {
       <div className='container'>
         <div className='cds--grid cds--grid--condensed cds--grid--reg--page'>
           <div className='cds--row cds--row-bg '>
+            <p className='has-text-centered'>{msg}</p>
             <div className='cds--col cds--row--bg'>
               <Form onSubmit={Register}>
                 <Stack gap={5}>
