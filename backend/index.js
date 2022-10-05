@@ -5,7 +5,7 @@ import cors from 'cors';
 import db from '../backend/config/database.js';
 import router from '../backend/routes/index.js';
 import bodyParser from 'body-parser';
-import session from 'express-session';
+//import session from 'express-session';
 
 dotenv.config();
 const app = express();
@@ -30,6 +30,7 @@ bodyParser.urlencoded({ extended: true });
 app.use(express.json());
 app.use(router);
 
+/*
 app.use(
   session({
     key: 'userId',
@@ -41,5 +42,5 @@ app.use(
     },
   })
 );
-
+*/
 app.listen(5000, () => console.log('Server running at port 5000'));

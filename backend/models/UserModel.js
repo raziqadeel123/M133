@@ -23,7 +23,6 @@ const Users = db.define(
     freezeTableName: true,
   }
 );
-
 /*
 (async () => {
   await db.sync();
