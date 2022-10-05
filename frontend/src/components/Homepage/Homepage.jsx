@@ -10,7 +10,7 @@ const Homepage = () => {
       <div className='cds--grid cds--grid--condensed'>
         <div className='cds--row'>
           <div className='cds--col'>
-            <h1 className='slogan--h1'>You can login and Register yourself</h1>
+            <h1 className='slogan--h1'>You can login or Register yourself</h1>
             <ButtonSet>
               <Link className='btn--mar-right' to='/login'>
                 <Button kind='primary'>Login</Button>

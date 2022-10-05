@@ -1,0 +1,50 @@
+// styling the landing page banner
+.landing-page__banner2 {
+  height: 500px;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+  background-color: #f4f4f4;
+}
+
+// styling the tape
+#ccs-22-tabpanel-1,
+#ccs-22-tabpanel-1 {
+  height: 150px;
+}
+
+.gettingStarted-btn {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.cds--breadcrumb-item {
+  margin: 250px 50px 0px 0px;
+}
+// text
+.desgin-Content {
+  font-size: 16px;
+  margin: 100px 150px;
+  text-align: center;
+}
+.landing-page__r2 .cds--tabs--scrollable {
+  transform: translateZ(0);
+  justify-content: flex-end;
+}
+
+.landing-page__r2 .cds--tab-content {
+  padding: 0;
+}
+
+.cds--tab--list {
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.cds--subgrid--wide {
+  //fix needed to keep the subgrid from scrolling horizontally
+  margin-right: 1rem;
+}
+
+.landing-page__illo {
+  max-width: 100%;
+}

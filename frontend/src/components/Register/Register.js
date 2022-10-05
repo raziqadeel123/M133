@@ -125,6 +125,7 @@ const Register = () => {
                   <TextInput
                     placeholder='Name'
                     labelText='Name'
+                    type='text'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
@@ -135,26 +136,30 @@ const Register = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     labelText='Email'
+                    type='email'
                     required
                   />
 
-                  <TextInput
+                  <TextInput.PasswordInput
+                    labelText='Password'
+                    placeholder='******'
+                    type='password'
+                    value={confPassword}
+                    onChange={(e) => setConfPassword(e.target.value)}
+                    required
+                    // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
+                  />
+
+                  <TextInput.PasswordInput
                     labelText='Confirm Password'
                     placeholder='******'
+                    type='password'
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
                     // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
                   />
 
-                  <TextInput
-                    labelText='Password'
-                    placeholder='******'
-                    value={confPassword}
-                    onChange={(e) => setConfPassword(e.target.value)}
-                    required
-                    // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
-                  />
                   <Button type='submit'> Register</Button>
                 </Stack>
                 {msg ? (

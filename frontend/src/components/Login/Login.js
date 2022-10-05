@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Form, FormGroup, Stack, TextInput, Button } from '@carbon/react';
+import {
+  Form,
+  FormGroup,
+  Stack,
+  TextInput,
+  Button,
+  PasswordInput,
+} from '@carbon/react';
 import Navbar from '../Navbar/Navbar';
 //import { useHistory } from 'react-router-dom';
 
@@ -89,7 +96,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <TextInput
+            <TextInput.PasswordInput
               labelText='Password'
               type='password'
               required
