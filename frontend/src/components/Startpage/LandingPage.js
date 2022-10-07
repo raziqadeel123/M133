@@ -141,7 +141,7 @@ const LandingPage = () => {
                           enthuiast of coding.....
                         </div>
                         <a href='?' class='btn btn__hire'>
-                          Read more
+                          contact
                         </a>
                       </div>
                     </div>
@@ -163,7 +163,7 @@ const LandingPage = () => {
                           enthuiast of coding.....
                         </div>
                         <a href='?' class='btn btn__hire'>
-                          Read more
+                          contact
                         </a>
                       </div>
                     </div>

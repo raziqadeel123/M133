@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
+
 import startpageHeader from './startpageHeader';
 import {
   Header,
@@ -32,7 +32,7 @@ const Startpage = () => (
             TODO
           </HeaderName>
           <HeaderNavigation aria-label='Carbon Tutorial'>
-            <HeaderMenuItem href='/repos'>Contact</HeaderMenuItem>
+            <HeaderMenuItem href='/contact'>Contact</HeaderMenuItem>
           </HeaderNavigation>
           <SideNav
             aria-label='Side navigation'
@@ -41,32 +41,11 @@ const Startpage = () => (
           >
             <SideNavItems>
               <HeaderSideNavItems>
-                <HeaderMenuItem href='/repos'>Repositories</HeaderMenuItem>
+                <HeaderMenuItem href='/contact'>Contact</HeaderMenuItem>
               </HeaderSideNavItems>
             </SideNavItems>
           </SideNav>
           <HeaderGlobalBar />
-
-          <HeaderGlobalBar>
-            <HeaderGlobalAction
-              aria-label='Notifications'
-              tooltipAlignment='center'
-            >
-              <Notification size={20} />
-            </HeaderGlobalAction>
-            <HeaderGlobalAction
-              aria-label='User Avatar'
-              tooltipAlignment='center'
-            >
-              <UserAvatar size={20} />
-            </HeaderGlobalAction>
-            <HeaderGlobalAction
-              aria-label='App Switcher'
-              tooltipAlignment='end'
-            >
-              <Switcher size={20} />
-            </HeaderGlobalAction>
-          </HeaderGlobalBar>
         </Header>
       )}
     />

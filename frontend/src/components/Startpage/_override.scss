@@ -22,6 +22,16 @@
 .bx--header {
   background-color: #000000;
 }
+
+// main header icon and text font-size
+.cds--header__global {
+  padding: 12px;
+}
+.cds--text-truncate--end,
+.cds--header__name--prefix {
+  font-size: 22px;
+}
+
 .landing-page__heading {
   margin-top: 210px;
   margin-left: 100px;
