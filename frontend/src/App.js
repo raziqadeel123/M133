@@ -8,7 +8,9 @@ import Homepage from './components/Homepage/Homepage.jsx';
 import Termandconditions from './components/Termandconditions.jsx';
 import { Pagenotfound } from './components/Pagenotfound.jsx';
 import Startpage from './components/Startpage/startpage.jsx';
+import Display from './components/Quiz/Display.js';
 import './App.scss';
+import { useSelector } from 'react-redux';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Startpage></Startpage>} />
         <Route exact path='/startpage' element={<Homepage></Homepage>} />
+        <Route path='/question' element={<Display></Display>} />
         <Route
           path='/termsandconditions'
           element={<Termandconditions></Termandconditions>}
