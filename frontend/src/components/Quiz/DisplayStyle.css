@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap');
 
-
-h1,
-h2 {
-  font-weight: 300;
+.App{
+  background-color: #f1f5f8;
 }
-
-h3 {
-  font-weight: 400;
+.quiz-Contianer{
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 30px;
+  width: 550px;
 }
-
-h2 {
-  margin-bottom: 0.6em;
+.quiz-Header{
+   color: #324D67; 
+   font-size: 18px;
+   text-align: left;
 }
 
 .App {
@@ -19,6 +19,8 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 0 16px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-header {
@@ -29,6 +31,7 @@ h2 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 10px;
 }
 
 .App-link {
@@ -36,11 +39,14 @@ h2 {
 }
 
 .app-container {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  max-width: 400px;
+  height: 60vh;
+  max-width: 650px;
+  margin: 300px;
+  padding: 60px;
 }
 
 ul {
@@ -62,12 +68,13 @@ input {
   color: #222;
   line-height: 1.3;
   padding: 0.6em 1.4em 0.5em 0.8em;
-  width: 100%;
+  /* width: 100%; */
   max-width: 100%;
   /* useful when width is set to anything other than 100% */
   box-sizing: border-box;
-  margin: 0;
-  margin-top: 1em;
+  margin: 12px;
+  /* margin-top: 1em; */
+  
   border: 1px solid #222;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   -moz-appearance: none;
@@ -83,6 +90,9 @@ button {
   color: #222;
 }
 
+button{
+  margin-top:30px;
+}
 /* Selects */
 /* class applies to select element itself, not a wrapper element */
 select {
@@ -90,31 +100,36 @@ select {
   display: block;
   font-size: 16px;
   color: #222;
+  background-color: #f1f5f8;
   line-height: 1.3;
-  padding: 0.6em 1.4em 0.5em 0.8em;
+ padding: 0.6em 1.4em 0.5em 0.8em; 
   width: 100%;
   max-width: 100%;
   /* useful when width is set to anything other than 100% */
   box-sizing: border-box;
   margin: 0;
-  margin-top: 1em;
-  border: 1px solid #222;
-  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  margin-bottom: 25px;
+  /* margin-top: 1em; */
+ border: none;
+  /* box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04); */
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #fff;
+
   cursor: pointer;
   /* note: bg image below uses 2 urls. The first is an svg data uri for the arrow icon, and the second is the gradient. 
     for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
     
   */
- 
+
   background-repeat: no-repeat;
   /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
   background-position: right 0.7em top 50%;
   /* icon size, then gradient */
   background-size: 0.65em auto;
+}
+.quiz-btn {
+  margin-top: 120px;
 }
 
 /* Hide arrow icon in IE browsers */

@@ -15,6 +15,8 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from '@carbon/react';
+import { Link } from 'react-router-dom';
+import { Login, Logout } from '@carbon/icons-react';
 import LandingPage from './LandingPage';
 
 const Startpage = () => (
@@ -29,23 +31,35 @@ const Startpage = () => (
             isActive={isSideNavExpanded}
           />
           <HeaderName href='/' prefix='OR'>
-            TODO
+            Quiz
           </HeaderName>
-          <HeaderNavigation aria-label='Carbon Tutorial'>
-            <HeaderMenuItem href='/contact'>Contact</HeaderMenuItem>
-          </HeaderNavigation>
+          <HeaderNavigation aria-label='Carbon Tutorial'></HeaderNavigation>
           <SideNav
             aria-label='Side navigation'
             expanded={isSideNavExpanded}
             isPersistent={false}
           >
-            <SideNavItems>
-              <HeaderSideNavItems>
-                <HeaderMenuItem href='/contact'>Contact</HeaderMenuItem>
-              </HeaderSideNavItems>
-            </SideNavItems>
+            <p>coming soon</p>
           </SideNav>
           <HeaderGlobalBar />
+
+          <HeaderSideNavItems>
+            {/* <HeaderMenuItem href='/contact'>Contact</HeaderMenuItem> */}
+          </HeaderSideNavItems>
+          <HeaderGlobalBar>
+            {/* <HeaderGlobalAction>
+              <Link to='/logout'>
+                <Logout size={20} />
+              </Link>
+            </HeaderGlobalAction>
+
+            <HeaderGlobalAction></HeaderGlobalAction> */}
+            <HeaderGlobalAction>
+              <Link to='/login'>
+                <Login size={20} aria-label='Login' />
+              </Link>
+            </HeaderGlobalAction>
+          </HeaderGlobalBar>
         </Header>
       )}
     />

@@ -25,18 +25,10 @@ const LandingPage = () => {
       </Column>
       <Column lg={16} md={8} sm={4} className='landing-page__r3'>
         <Grid>
-          <Column md={4} lg={4} sm={4}>
-            1/4
-          </Column>
-          <Column md={4} lg={4} sm={4}>
-            1/4
-          </Column>
-          <Column md={4} lg={4} sm={4}>
-            1/4
-          </Column>
-          <Column md={4} lg={4} sm={4}>
-            1/4
-          </Column>
+          <Column md={4} lg={4} sm={4}></Column>
+          <Column md={4} lg={4} sm={4}></Column>
+          <Column md={4} lg={4} sm={4}></Column>
+          <Column md={4} lg={4} sm={4}></Column>
         </Grid>
       </Column>
       <Column lg={16} md={8} sm={4} className='landing-page__banner2'>

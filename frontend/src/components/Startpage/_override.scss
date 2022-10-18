@@ -1,3 +1,36 @@
+// cards desgin
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,800,900');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+:root {
+  --font-mont: 'Montserrat', sans-serif;
+  --font-be: 'Bree Serif', serif;
+  --color-dark-blue: #2b353f;
+  --color-mustard-yellow: #e9ca4d;
+  --color-purple: #36324f;
+  --color-dark-purple: #332546;
+  --color-green: #0f62fe;
+  --color-pale-green: #2bd08e;
+  --color-pale-pink: #f6f0ba;
+  --box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-mont);
+}
+
 // startpage header
 
 .cds--header {
@@ -50,10 +83,18 @@
 .gettingStarted-btn {
   text-decoration: none !important;
   color: #fff !important;
+  border: none;
+  list-style: none;
 }
 
 .cds--breadcrumb-item {
   margin: 20px 50px 0px 0px;
+  border: none;
+  background-color: transparent;
+  width: 200px;
+}
+.cds--breadcrumb-item:hover {
+  background-color: transparent;
 }
 // text
 .desgin-Content {
@@ -88,39 +129,6 @@
 .cds--link {
   padding: 20px 30px;
   font-size: 18px;
-}
-
-// cards desgin
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,800,900');
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
-
-:root {
-  --font-mont: 'Montserrat', sans-serif;
-  --font-be: 'Bree Serif', serif;
-  --color-dark-blue: #2b353f;
-  --color-mustard-yellow: #e9ca4d;
-  --color-purple: #36324f;
-  --color-dark-purple: #332546;
-  --color-green: #0f62fe;
-  --color-pale-green: #2bd08e;
-  --color-pale-pink: #f6f0ba;
-  --box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.35);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-img {
-  height: 100%;
-}
-
-body {
-  position: relative;
-  font-family: var(--font-mont);
 }
 
 .wrapper {
@@ -158,6 +166,41 @@ body {
 // font desgin
 .mini-navbar {
   font-size: 22px !important;
+  margin-left: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Main-content-text {
+    padding: 30px 20px;
+    font-size: 18px;
+  }
+  .landing-page__p {
+    font-size: 18px;
+  }
+  .wrapper {
+    background-size: 8%;
+    height: 50%;
+    flex-wrap: inherit;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 200px;
+    width: 0px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .landing-page__heading {
+    margin-left: 20px;
+  }
+  .Main-content-text {
+    padding: 30px 20px;
+    font-size: 18px;
+  }
+  .landing-page__p {
+    font-size: 16px;
+  }
 }
 
 /*
