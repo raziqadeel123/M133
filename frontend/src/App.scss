@@ -1,6 +1,6 @@
 // grlobel gird styling
 .cds--grid {
-  margin: 80px 0px 60px 350px;
+  margin: 250px 0px 60px 450px;
 }
 
 // styling the button set in Homepage
@@ -59,7 +59,7 @@
 
 // Footer styling
 footer {
-  margin-top: 320px;
+  margin-top: 450px;
 }
 footer ul {
   display: flex;
@@ -77,6 +77,9 @@ footer ul li a {
 footer ul li a:hover {
   color: black;
   border-bottom: 1px solid black;
+}
+.footer-ul li {
+  border: none;
 }
 
 //Log out

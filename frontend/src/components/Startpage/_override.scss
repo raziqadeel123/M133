@@ -75,10 +75,10 @@ body {
 // the main text content style
 .landing-page__p {
   padding: 20px 0px;
-  font-size: 22px;
+  font-size: 32px;
 }
 .Main-content-text {
-  padding: 140px 100px;
+  padding: 140px 200px 100px 100px;
 }
 .gettingStarted-btn {
   text-decoration: none !important;
@@ -138,7 +138,7 @@ body {
   height: 100%;
   min-height: 50vh;
   display: flex;
-  flex-flow: row wrap;
+
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -169,13 +169,13 @@ body {
   margin-left: 200px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .Main-content-text {
     padding: 30px 20px;
-    font-size: 18px;
+    font-size: 38px;
   }
   .landing-page__p {
-    font-size: 18px;
+    font-size: 38px;
   }
   .wrapper {
     background-size: 8%;
@@ -185,7 +185,7 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 220px;
     width: 0px;
   }
 }
@@ -200,6 +200,13 @@ body {
   }
   .landing-page__p {
     font-size: 16px;
+  }
+  .landing-page__banner2 {
+    height: 300px;
+  }
+  .landing-page__heading {
+    margin-top: 60px;
+    font-size: 24px;
   }
 }
 
@@ -219,7 +226,7 @@ body {
   position: reative;
   display: inline-block;
   background: #ffffff;
-  width: 300px;
+  width: 350px;
   margin: 20px 15px;
   min-width: 275px;
   border: {
@@ -239,7 +246,7 @@ body {
   background-color: var(--color-heading);
   background: url(https://picsum.photos/275/150?image=75);
   background-size: cover;
-  height: 175px;
+  height: 210px;
   width: 100%;
   .card__user__image {
     position: absolute;
@@ -287,7 +294,7 @@ body {
   .card__text__about {
     margin: 0;
     padding: 1.5em 0.75em;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 150%;
     text-align: center;
     font-weight: 500;
@@ -305,7 +312,7 @@ body {
   text-decoration: none;
   padding: 15px 25px;
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 18px;
   //text-transform: uppercase;
   font-weight: regular;
   letter-spacing: 2px;

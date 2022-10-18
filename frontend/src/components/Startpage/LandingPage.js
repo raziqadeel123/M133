@@ -1,7 +1,7 @@
 import { Grid, Column, Link } from '@carbon/react';
 import { Breadcrumb, BreadcrumbItem } from '@carbon/react';
 import { Button, Tabs, Tab, TabList, TabPanels, TabPanel } from '@carbon/react';
-import BannerImg from './Assets/banner.png';
+import BannerImg from './Assets/quiz.svg';
 import TeamDesgin from './Assets/undraw_remote_design_team_re_urdx.svg';
 import MaleAvator from './Assets/male3-512.webp';
 import React from 'react';
@@ -50,7 +50,7 @@ const LandingPage = () => {
             <Tab className='mini-navbar'>Develop</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel>
+            {/* <TabPanel>
               <Grid className='tabs-group-content'>
                 <Column
                   md={4}
@@ -68,6 +68,33 @@ const LandingPage = () => {
                     guidelines, and a vibrant community of contributors.
                   </p>
                   <Button>Learn more</Button>
+                </Column>
+                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
+                  <img
+                    class='landing-page__illo'
+                    src={BannerImg}
+                    alt='Carbon illustration'
+                  />
+                </Column>
+              </Grid>
+            </TabPanel> */}
+            <TabPanel>
+              <Grid className='tabs-group-content'>
+                <Column
+                  md={4}
+                  lg={7}
+                  sm={4}
+                  className='landing-page__tab-content Main-content-text'
+                >
+                  <h2 className='landing-page__subheading'>Quiz</h2>
+                  <p className='desgin-Content landing-page__p'>
+                    Its is a web Application basend on react and Node.js used
+                    IBM Carbon Desgin which an open-source design system for
+                    digital products and experiences. With the IBM Design
+                    Language as its foundation, the system consists of working
+                    code, design tools and resources, human interface
+                    guidelines, and a vibrant community of contributors.
+                  </p>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
                   <img
