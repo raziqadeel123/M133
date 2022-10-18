@@ -8,6 +8,6 @@ router.get('/users', verifyToken, getUsers);
 router.post('/users', Register);
 router.post('/login', Login);
 router.get('/token', refreshToken);
-router.get('/logout', Logout);
+router.delete('/logout', Logout);
 
 export default router;

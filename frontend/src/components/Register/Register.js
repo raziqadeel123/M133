@@ -15,6 +15,7 @@ import {
   RadioButtonGroup,
   Select,
   ToastNotification,
+  InlineNotification,
 } from '@carbon/react';
 
 const Register = () => {
@@ -34,7 +35,7 @@ const Register = () => {
         password: password,
         confPassword: confPassword,
       });
-      navigate('/');
+      navigate('/login');
     } catch (error) {
       if (error.response) {
         console.log(error.response);
@@ -115,10 +116,22 @@ const Register = () => {
       </section>
   */}
       <Navbar></Navbar>
+
       <div className='container'>
+        {msg ? (
+          <InlineNotification
+            actionButtonLabel='Action'
+            ariaLabel='closes notification'
+            onClose={function noRefCheck() {}}
+            onCloseButtonClick={function noRefCheck() {}}
+            statusIconDescription='notification'
+            subtitle={msg}
+            title='Error'
+          />
+        ) : null}
         <div className='cds--grid cds--grid--condensed cds--grid--reg--page'>
           <div className='cds--row cds--row-bg '>
-            <p className='has-text-centered'>{msg}</p>
+            {/* <p className='has-text-centered'>{msg}</p> */}
             <div className='cds--col cds--row--bg'>
               <Form onSubmit={Register}>
                 <Stack gap={5}>
@@ -162,15 +175,6 @@ const Register = () => {
 
                   <Button type='submit'> Register</Button>
                 </Stack>
-                {msg ? (
-                  <ToastNotification
-                    onClose={function noRefCheck() {}}
-                    onCloseButtonClick={function noRefCheck() {}}
-                    statusIconDescription='notification'
-                    title='form Status'
-                    kind='success'
-                  />
-                ) : null}
               </Form>
             </div>
             <div className='cds--col cds--row--bg'>
