@@ -1,10 +1,26 @@
-.cds--grid {
-  margin: 30px 140px 20px 140px;
-}
-
 * {
   box-sizing: border-box;
   margin: 0px;
+}
+.regContainer {
+  margin-top: 120px;
+}
+.cds--grid {
+  margin: 30px 140px 20px 140px;
+}
+// reg form style
+
+.regcontainer {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5e5e5;
+  height: 92vh;
+}
+
+.reg-notification {
+  height: 60px;
 }
 .cds--row-bg {
   padding: 40px;
@@ -15,7 +31,11 @@
   margin: 30px;
 }
 .cds--form {
-  padding: 30px;
+  margin-top: 200px;
+  padding: 60px;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 30px;
 }
 .auth--image {
   width: 90%;

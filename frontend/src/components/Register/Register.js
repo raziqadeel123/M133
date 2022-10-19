@@ -10,6 +10,8 @@ import {
   Button,
   TextInput,
   InlineNotification,
+  Column,
+  Grid,
 } from '@carbon/react';
 
 const Register = () => {
@@ -111,76 +113,64 @@ const Register = () => {
   */}
       <Navbar></Navbar>
 
-      <div className='container'>
-        {msg ? (
-          <InlineNotification
-            actionButtonLabel='Action'
-            ariaLabel='closes notification'
-            onClose={function noRefCheck() {}}
-            onCloseButtonClick={function noRefCheck() {}}
-            statusIconDescription='notification'
-            subtitle={msg}
-            title='Error'
-          />
-        ) : null}
-        <div className='cds--grid cds--grid--condensed cds--grid--reg--page'>
-          <div className='cds--row cds--row-bg '>
-            {/* <p className='has-text-centered'>{msg}</p> */}
-            <div className='cds--col cds--row--bg'>
-              <Form onSubmit={Register}>
-                <Stack gap={5}>
-                  <TextInput
-                    placeholder='Name'
-                    labelText='Name'
-                    type='text'
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                  />
-
-                  <TextInput
-                    placeholder='yourname@example.com'
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    labelText='Email'
-                    type='email'
-                    required
-                  />
-
-                  <TextInput.PasswordInput
-                    labelText='Password'
-                    placeholder='******'
-                    type='password'
-                    value={confPassword}
-                    onChange={(e) => setConfPassword(e.target.value)}
-                    required
-                    // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
-                  />
-
-                  <TextInput.PasswordInput
-                    labelText='Confirm Password'
-                    placeholder='******'
-                    type='password'
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                    // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
-                  />
-
-                  <Button type='submit'> Register</Button>
-                </Stack>
-              </Form>
-            </div>
-            <div className='cds--col cds--row--bg'>
-              <img
-                className='auth--image'
-                src={authentication}
-                alt='authentication image'
-              />
-            </div>
-          </div>
+      <section className='regcontainer'>
+        <div className='reg-notification'>
+          {msg ? (
+            <InlineNotification
+              actionButtonLabel='Action'
+              ariaLabel='closes notification'
+              onClose={function noRefCheck() {}}
+              onCloseButtonClick={function noRefCheck() {}}
+              statusIconDescription='notification'
+              subtitle={msg}
+              title='Error'
+            />
+          ) : null}
         </div>
-      </div>
+        <Form onSubmit={Register}>
+          <Stack gap={5}>
+            <TextInput
+              placeholder='Name'
+              labelText='Name'
+              type='text'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+
+            <TextInput
+              placeholder='yourname@example.com'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              labelText='Email'
+              type='email'
+              required
+            />
+
+            <TextInput.PasswordInput
+              labelText='Password'
+              placeholder='******'
+              type='password'
+              value={confPassword}
+              onChange={(e) => setConfPassword(e.target.value)}
+              required
+              // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
+            />
+
+            <TextInput.PasswordInput
+              labelText='Confirm Password'
+              placeholder='******'
+              type='password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              // pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}'
+            />
+
+            <Button type='submit'> Register</Button>
+          </Stack>
+        </Form>
+      </section>
     </>
   );
 };
