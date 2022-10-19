@@ -35,7 +35,7 @@ const Register = () => {
     } catch (error) {
       if (error.response) {
         console.log(error.response);
-        //   console.log(error.response.data.msg)
+        console.log(error.response.data.msg);
         setMsg(error.response.data.msg);
       }
     }

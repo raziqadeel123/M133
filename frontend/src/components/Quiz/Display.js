@@ -7,6 +7,7 @@ import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar.js';
+import { InlineNotification } from '@carbon/react';
 
 import './DisplayStyle.css';
 
@@ -15,6 +16,7 @@ function Display() {
   const [token, setToken] = useState('');
   const [expire, setExpire] = useState('');
   const [users, setUsers] = useState([]);
+  const [msg, setMsg] = useState('');
   const navigate = useNavigate();
   const questions = useSelector((state) => state.questions);
   const questionIndex = useSelector((state) => state.index);
@@ -34,6 +36,8 @@ function Display() {
     } catch (error) {
       if (error.response) {
         navigate('/');
+        console.log('please login your self');
+        setMsg(error.response.data.msg);
       }
     }
   };
@@ -71,6 +75,7 @@ function Display() {
   return (
     <>
       <Navbar></Navbar>
+
       <div className='App'>
         <div className='app-container'>{component}</div>
       </div>

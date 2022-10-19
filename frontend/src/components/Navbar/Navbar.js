@@ -93,11 +93,11 @@ const Navbar = () => {
             </HeaderName>
           </Link>
           <HeaderGlobalBar>
-            {/* <HeaderGlobalAction aria-label='Logout'>
+            <HeaderGlobalAction aria-label='Logout'>
               <button onClick={Logoutuser} className='logout-btn'>
                 <Logout size={20}></Logout>
               </button>
-            </HeaderGlobalAction> */}
+            </HeaderGlobalAction>
           </HeaderGlobalBar>
         </Header>
       </Theme>

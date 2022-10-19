@@ -59,7 +59,7 @@ function Question() {
           type: 'SET_INDEX',
           index: questionIndex + 1,
         });
-      }, 2500);
+      }, 1000);
     }
   };
   /*
