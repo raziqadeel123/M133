@@ -1,6 +1,6 @@
 // grlobel gird styling
 .cds--grid {
-  margin: 250px 0px 60px 450px;
+  margin: 150px 140px 140px;
 }
 
 // styling the button set in Homepage
@@ -59,7 +59,7 @@
 
 // Footer styling
 footer {
-  margin-top: 450px;
+  // margin-top: 50px;
 }
 footer ul {
   display: flex;
@@ -102,4 +102,8 @@ section {
 section img {
   height: 600px;
   width: 400px;
+}
+.cds--tabs {
+  margin-top: 50px;
+  height: 60%;
 }

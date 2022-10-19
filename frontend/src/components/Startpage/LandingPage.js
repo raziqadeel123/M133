@@ -31,9 +31,9 @@ const LandingPage = () => {
           <Column md={4} lg={4} sm={4}></Column>
         </Grid>
       </Column>
-      <Column lg={16} md={8} sm={4} className='landing-page__banner2'>
+      {/* <Column lg={16} md={8} sm={4} className='landing-page__banner2'>
         <h1 className='landing-page__heading'>Hello &amp; Wellcome</h1>
-
+        <p>Quiz in more then 100 Categroies</p>
         <Breadcrumb noTrailingSlash>
           <BreadcrumbItem>
             <Button className='gettingStarted-btn' href='/startpage'>
@@ -41,7 +41,7 @@ const LandingPage = () => {
             </Button>
           </BreadcrumbItem>
         </Breadcrumb>
-      </Column>
+      </Column> */}
       <Column lg={16} md={8} sm={4} className='landing-page__r2'>
         <Tabs defaultSelectedIndex={0}>
           <TabList className='tabs-group'>
@@ -50,34 +50,6 @@ const LandingPage = () => {
             <Tab className='mini-navbar'>Develop</Tab>
           </TabList>
           <TabPanels>
-            {/* <TabPanel>
-              <Grid className='tabs-group-content'>
-                <Column
-                  md={4}
-                  lg={7}
-                  sm={4}
-                  className='landing-page__tab-content Main-content-text'
-                >
-                  <h2 className='landing-page__subheading'>What is Todo?</h2>
-                  <p className='landing-page__p'>
-                    Its is a web Application basend on react and Node.js used
-                    IBM Carbon Desgin which an open-source design system for
-                    digital products and experiences. With the IBM Design
-                    Language as its foundation, the system consists of working
-                    code, design tools and resources, human interface
-                    guidelines, and a vibrant community of contributors.
-                  </p>
-                  <Button>Learn more</Button>
-                </Column>
-                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
-                  <img
-                    class='landing-page__illo'
-                    src={BannerImg}
-                    alt='Carbon illustration'
-                  />
-                </Column>
-              </Grid>
-            </TabPanel> */}
             <TabPanel>
               <Grid className='tabs-group-content'>
                 <Column
