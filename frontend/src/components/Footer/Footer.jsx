@@ -1,7 +1,7 @@
 import React from 'react';
 import { Termandconditions } from '../Termandconditions';
 import { Link } from 'react-router-dom';
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer>
       <ul className='footer-ul'>
@@ -18,3 +18,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

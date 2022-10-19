@@ -1,10 +1,11 @@
 import React from 'react';
 import { Accordion, AccordionItem } from '@carbon/react';
+import Navbar from './Navbar/Navbar';
 
- const Termandconditions = () => {
+const Termandconditions = () => {
   return (
     <>
-    
+      <Navbar></Navbar>
       <div class='cds--grid cds--grid--condensed acc-container'>
         <div class='cds--row'>
           <div class='cds--col col--padding'>
@@ -12,10 +13,10 @@ import { Accordion, AccordionItem } from '@carbon/react';
             <Accordion>
               <AccordionItem title='Who we are?'>
                 <p>
-                   The customers have the
-                  possibility to buy on kick different shoes from all top brands
-                  in the world. Kick is developed by Goitom Okbay and Raziq
-                  Adeel as a school project. Our website address is: kick
+                  The customers have the possibility to buy on kick different
+                  shoes from all top brands in the world. Kick is developed by
+                  Goitom Okbay and Raziq Adeel as a school project. Our website
+                  address is: kick
                 </p>
               </AccordionItem>
               <AccordionItem title='Prices and costs'>

@@ -10,7 +10,13 @@ import {
   Theme,
   Link,
 } from '@carbon/react';
-import { Search, Notification, Logout, Clean } from '@carbon/icons-react';
+import {
+  Search,
+  Notification,
+  Logout,
+  ArrowLeft,
+  Clean,
+} from '@carbon/icons-react';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -82,15 +88,16 @@ const Navbar = () => {
         <Header aria-label='Cleaning App' className='header--styling'>
           <Link className='btn--mar-right' to='/'>
             <HeaderName href='/' prefix=''>
-              <Clean size={30} />
+              {/* <Clean size={30} /> */}
+              <ArrowLeft size={30} />
             </HeaderName>
           </Link>
           <HeaderGlobalBar>
-            <HeaderGlobalAction aria-label='Logout'>
+            {/* <HeaderGlobalAction aria-label='Logout'>
               <button onClick={Logoutuser} className='logout-btn'>
                 <Logout size={20}></Logout>
               </button>
-            </HeaderGlobalAction>
+            </HeaderGlobalAction> */}
           </HeaderGlobalBar>
         </Header>
       </Theme>
