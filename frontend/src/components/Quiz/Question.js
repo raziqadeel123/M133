@@ -90,9 +90,9 @@ function Question() {
   }
   return (
     <div>
-      <p>Question {questionIndex + 1}</p>
+      <p className='Questiion'>Question {questionIndex + 1}</p>
       <h3>{question.question}</h3>
-      <ul>
+      <ul className='optionlist'>
         {options.map((option, i) => (
           <li
             key={i}
@@ -103,7 +103,7 @@ function Question() {
           </li>
         ))}
       </ul>
-      <div>
+      <div className='score'>
         Score: {score} / {questions.length}
       </div>
     </div>

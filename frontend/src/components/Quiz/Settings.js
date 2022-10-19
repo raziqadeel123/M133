@@ -121,7 +121,11 @@ function Settings() {
 
         <div>
           <h3 className='quiz-Header'>Amount of Questions</h3>
-          <input value={questionAmount} onChange={handleAmountChange} />
+          <input
+            className='question-input'
+            value={questionAmount}
+            onChange={handleAmountChange}
+          />
         </div>
 
         <FetchButton className='quiz-btn' text='Get started!' />

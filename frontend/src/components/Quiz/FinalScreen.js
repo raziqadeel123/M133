@@ -35,9 +35,13 @@ function FinalScreen() {
   return (
     <div>
       <h3>Final Score: {score}</h3>
-      <button onClick={replay}>Try again</button>
+      <button className='quiz-btn' onClick={replay}>
+        Try again
+      </button>
       <FetchButton text='Fetch new questions' />
-      <button onClick={settings}>Back to settings</button>
+      <button className='quiz-btn' onClick={settings}>
+        Back to settings
+      </button>
     </div>
   );
 }

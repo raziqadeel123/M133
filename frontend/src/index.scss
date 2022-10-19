@@ -1,5 +1,6 @@
 @use '@carbon/react';
 @use '@carbon/grid';
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
 // Emit the flex-grid styles
 @include grid.flex-grid();
