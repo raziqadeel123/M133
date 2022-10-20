@@ -20,11 +20,6 @@ const LandingPage = () => {
   const [auth, setAuth] = useState('');
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   // refreshToken();
-  //   getAuth();
-  // }, []);
-
   const axiosJWT = axios.create();
   const getAuth = async () => {
     try {
@@ -33,11 +28,12 @@ const LandingPage = () => {
           Authorization: `Bearer ${token}`,
         },
       });
-      navigate('/');
+      navigate('/question');
     } catch (error) {
       // var msg = error.response.data;
       setMsg(error.response.data);
       console.log(error.response.data);
+      navigate('/');
     }
   };
 
@@ -75,9 +71,7 @@ const LandingPage = () => {
             <div>
               <Button href='/startpage'>Get Started!</Button>
 
-              <Button className='circle' href='/question' onClick={getAuth}>
-                play!
-              </Button>
+              <Button onClick={getAuth}>play!</Button>
             </div>
           </div>
         </Column>

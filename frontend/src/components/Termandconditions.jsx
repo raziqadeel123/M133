@@ -37,7 +37,11 @@ const Termandconditions = () => {
               <AccordionItem title='Content & Images '>
                 <p>
                   Credit for all images and content in this Project is from
-                  <a href='https://undraw.co/'>undraw</a> and open source
+                  <a href='https://undraw.co/'>undraw</a> and open source and
+                  the api that we are using
+                  <a href='https://opentdb.com/'>opentdb</a> and all the
+                  illstration are from{' '}
+                  <a href='https://freeillustrations.xyz/'>freeillustrations</a>
                 </p>
               </AccordionItem>
             </Accordion>
