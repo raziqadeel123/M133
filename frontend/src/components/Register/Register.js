@@ -128,6 +128,8 @@ const Register = () => {
           ) : null}
         </div>
         <Form onSubmit={Register}>
+          <legend className='login-text'>Register</legend>
+          <legend className='message'></legend>
           <Stack gap={5}>
             <TextInput
               placeholder='Name'

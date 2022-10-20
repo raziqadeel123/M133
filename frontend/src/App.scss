@@ -3,11 +3,14 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  outline: none;
 }
 .cds--grid {
   margin: 120px 140px 0px 140px;
 }
-
+.login-text {
+  font-size: 36px;
+}
 // styling the button set in Homepage
 .cds--btn-set {
   margin-top: 110px;
@@ -118,4 +121,62 @@ section img {
 .about-text p {
   margin-top: 10px;
   padding: 0px 150px 0px 0px;
+}
+@media only screen and (max-width: 450px) {
+  .title {
+    font-size: 42px;
+  }
+  .landingpage-img {
+    width: 100%;
+    display: none;
+  }
+  .cds--btn--primary {
+    margin: 0px 10px 0px 0px;
+  }
+  footer ul {
+    font-size: 12px;
+  }
+  footer ul li {
+    margin: 10px 20px 10px 0px;
+  }
+  .cds--inline-notification--error {
+    margin-left: 50px;
+  }
+  .reg-notification {
+    margin-top: 80px;
+  }
+  .landingpage-title {
+    margin-top: 30px;
+  }
+  .cds--grid {
+    margin: 0px;
+  }
+  .slogan--h1 {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+  .img--banner {
+    width: 100%;
+  }
+  .cds--btn-set {
+    margin: 30px 10px;
+  }
+  .login--formGroup {
+    width: 500px;
+    padding: 20px;
+  }
+  .loginbtn {
+    width: 100%;
+    text-align: center;
+  }
+  .cds--form {
+    padding: 20px;
+    width: 100%;
+  }
+  .regcontainer {
+    margin-top: 60px;
+  }
+  .about-text p {
+    padding: 40px 10px 10px 10px;
+  }
 }

@@ -86,10 +86,11 @@ const Login = () => {
 
       <Form className='login--form' onSubmit={Auth}>
         <FormGroup className='login--formGroup'>
+          <legend className='login-text'>Login</legend>
           <legend className='message'>{msg}</legend>
           <Stack gap={7}>
             <TextInput
-              labelText='Enter an Email'
+              labelText='Enter email'
               type='email'
               placeholder='Email'
               value={email}
@@ -104,7 +105,7 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Button type='submit' kind='primary'>
+            <Button className='loginbtn' type='submit' kind='primary'>
               Login
             </Button>
           </Stack>

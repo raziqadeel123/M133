@@ -21,6 +21,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const axiosJWT = axios.create();
+
   const getAuth = async () => {
     try {
       const response = await axiosJWT.get('http://localhost:5000/token', {
@@ -39,46 +40,48 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className='reg-notification'>
-        {msg ? (
-          <InlineNotification
-            actionButtonLabel='Action'
-            ariaLabel='closes notification'
-            onClose={function noRefCheck() {}}
-            onCloseButtonClick={function noRefCheck() {}}
-            statusIconDescription='notification'
-            subtitle={msg}
-            title='Error'
-          />
-        ) : null}
-      </div>
-      <Grid className='landingpage-container'>
-        <Column span={8}>
-          <div className='landingpage-text'>
-            <div className='landingpage-title'>
-              <h1 className='title'>
-                Play & have fun with the <span>Quiz</span>
-              </h1>
-            </div>
+      <section>
+        <div className='reg-notification'>
+          {msg ? (
+            <InlineNotification
+              actionButtonLabel='Action'
+              ariaLabel='closes notification'
+              onClose={function noRefCheck() {}}
+              onCloseButtonClick={function noRefCheck() {}}
+              statusIconDescription='notification'
+              subtitle={msg}
+              title='Error'
+            />
+          ) : null}
+        </div>
+        <Grid className='landingpage-container'>
+          <Column span={8}>
+            <div className='landingpage-text'>
+              <div className='landingpage-title'>
+                <h1 className='title'>
+                  Play & have fun with the <span>Quiz</span>
+                </h1>
+              </div>
 
-            <div className='description'>
-              <p>
-                The Quiz is more Customize able, you can choose Questions
-                category, you can Customize the amount of Question
-              </p>
-            </div>
+              <div className='description'>
+                <p>
+                  The Quiz is more Customize able, you can choose Questions
+                  category, you can Customize the amount of Question
+                </p>
+              </div>
 
-            <div>
-              <Button href='/startpage'>Get Started!</Button>
+              <div>
+                <Button href='/startpage'>Get Started!</Button>
 
-              <Button onClick={getAuth}>play!</Button>
+                <Button onClick={getAuth}>play!</Button>
+              </div>
             </div>
-          </div>
-        </Column>
-        <Column span={8}>
-          <img className='landingpage-img' src={BannerImg}></img>
-        </Column>
-      </Grid>
+          </Column>
+          <Column span={8}>
+            <img className='landingpage-img' src={BannerImg}></img>
+          </Column>
+        </Grid>
+      </section>
       <Footer></Footer>
     </>
   );

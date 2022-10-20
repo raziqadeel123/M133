@@ -40,7 +40,7 @@ const Termandconditions = () => {
                   <a href='https://undraw.co/'>undraw</a> and open source and
                   the api that we are using
                   <a href='https://opentdb.com/'>opentdb</a> and all the
-                  illstration are from{' '}
+                  illstration are from
                   <a href='https://freeillustrations.xyz/'>freeillustrations</a>
                 </p>
               </AccordionItem>
