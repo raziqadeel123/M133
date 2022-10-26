@@ -42,7 +42,7 @@ const LandingPage = () => {
     <>
       <section>
         <div className='reg-notification'>
-          {msg ? (
+          {/* {msg ? (
             <InlineNotification
               actionButtonLabel='Action'
               ariaLabel='closes notification'
@@ -52,7 +52,7 @@ const LandingPage = () => {
               subtitle={msg}
               title='Error'
             />
-          ) : null}
+          ) : null} */}
         </div>
         <Grid className='landingpage-container'>
           <Column span={8}>
@@ -74,6 +74,19 @@ const LandingPage = () => {
                 <Button href='/startpage'>Get Started!</Button>
 
                 <Button onClick={getAuth}>play!</Button>
+                <div>
+                  {msg ? (
+                    <InlineNotification
+                      actionButtonLabel='Action'
+                      ariaLabel='closes notification'
+                      onClose={function noRefCheck() {}}
+                      onCloseButtonClick={function noRefCheck() {}}
+                      statusIconDescription='notification'
+                      subtitle={msg}
+                      title='Error'
+                    />
+                  ) : null}
+                </div>
               </div>
             </div>
           </Column>

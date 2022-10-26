@@ -9,10 +9,10 @@ const Footer = () => {
           <Link to='/termsandconditions'> Terms and Conditions</Link>
         </li>
         <li>
-          <a href='#'> Help </a>
+          <a href='/help'> Help </a>
         </li>
         <li>
-          <a href='#'> AGB </a>
+          <a href='/agb'> AGB </a>
         </li>
       </ul>
     </footer>

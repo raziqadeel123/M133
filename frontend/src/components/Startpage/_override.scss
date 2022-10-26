@@ -166,7 +166,13 @@ body {
   //animation-fill-mode: both;
   //animation-name: background;
 }
-
+.landingpage-img {
+  width: 100%;
+}
+.cds--inline-notification--error {
+  margin-left: 0px;
+  margin-top: 10px;
+}
 @keyframes background {
   0% {
     background-position: top-left;

@@ -10,6 +10,8 @@ import { Pagenotfound } from './components/Pagenotfound.jsx';
 import Startpage from './components/Startpage/startpage.jsx';
 import Display from './components/Quiz/Display.js';
 import About from './components/page/About.jsx';
+import Help from './components/page/Help.jsx';
+import Agb from './components/page/Agb.jsx';
 import './App.scss';
 import { useSelector } from 'react-redux';
 
@@ -21,6 +23,8 @@ function App() {
         <Route exact path='/startpage' element={<Homepage></Homepage>} />
         <Route path='/question' element={<Display></Display>} />
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/help' element={<Help></Help>}></Route>
+        <Route path='/agb' element={<Agb></Agb>}></Route>
         <Route
           path='/termsandconditions'
           element={<Termandconditions></Termandconditions>}

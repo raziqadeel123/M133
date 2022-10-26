@@ -13,27 +13,22 @@ const Termandconditions = () => {
             <Accordion>
               <AccordionItem title='Who we are?'>
                 <p>
-                  The customers have the possibility to buy on kick different
-                  shoes from all top brands in the world. Kick is developed by
-                  Goitom Okbay and Raziq Adeel as a school project. Our website
-                  address is: kick
+                  We are Goitom Okbay and Raziq Adeel as a school project we
+                  developed this web Application. In frontend we have use React
+                  js, a javascript framework. the Backend we have developed with
+                  Express js a node js framework. For our data for the Quiz, we
+                  have use an open source API called
+                  <a href='https://opentdb.com/'> opentdb </a>
+                  API. It was fun working on the project. we faced numbers of
+                  chellanges but we disscused, and solved it together.
                 </p>
               </AccordionItem>
               <AccordionItem title='Prices and costs'>
                 <p>
-                  All prices are inclusive of VAT. There is no minimum order
-                  value. We ship by Swiss Post or other carrier of our choice.
+                  All the resources in this project is free and opensources.
                 </p>
               </AccordionItem>
-              <AccordionItem title='Payment conditions'>
-                <p>
-                  The payment is made through the WoCommere payment methods, the
-                  customer can purchase either cash on delivery or with the
-                  credit card / debit card. For the credit card data, the
-                  customer can choose whether to have the credit card
-                  information stored or not
-                </p>
-              </AccordionItem>
+
               <AccordionItem title='Content & Images '>
                 <p>
                   Credit for all images and content in this Project is from

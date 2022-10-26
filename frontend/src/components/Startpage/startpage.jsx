@@ -35,7 +35,7 @@ const Startpage = () => (
           <HeaderName href='/' prefix='OR'>
             Quiz
           </HeaderName>
-          <HeaderNavigation aria-label='Carbon Tutorial'></HeaderNavigation>
+          {/* <HeaderNavigation aria-label='Carbon Tutorial'></HeaderNavigation> */}
 
           <HeaderNavigation aria-label='IBM [Platform]'>
             {/* <HeaderMenuItem href='/login'>Login</HeaderMenuItem> */}
@@ -89,7 +89,7 @@ const Startpage = () => (
             <HeaderGlobalAction></HeaderGlobalAction> */}
             <HeaderGlobalAction>
               <Link to='/login'>
-                <Login size={20} aria-label='Login' />
+                <Login size={30} aria-label='Login' />
               </Link>
             </HeaderGlobalAction>
           </HeaderGlobalBar>
