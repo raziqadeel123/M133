@@ -1,10 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Navbar from '../Navbar/Navbar.js';
+import comingsoon from './commingsoon.gif';
+import './pages.scss';
 
-const Help = (props) => {
-  return <div>Your can contact us per this</div>;
+const Help = () => {
+  return (
+    <>
+      <Navbar></Navbar>
+      <div className='pageContainer'>
+        <img src={comingsoon} />
+      </div>
+    </>
+  );
 };
-
-Help.propTypes = {};
 
 export default Help;
